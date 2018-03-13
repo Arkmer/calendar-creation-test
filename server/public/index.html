@@ -13,6 +13,16 @@
     <script src="controllers/WeekController.js"></script>
     <script src="controllers/DayController.js"></script>
     <script src="services/TempService.js"></script>
+    <!-- Begin ui-Cal things -->
+    <link rel="stylesheet" href="bower_components/fullcalendar/dist/fullcalendar.css"/>
+    <!-- jquery, moment, and angular have to get included before fullcalendar -->
+    <script type="text/javascript" src="vendors/jquery-3.3.1.min.js"></script>
+    <script type="text/javascript" src="vendors/moment/min/moment.min.js"></script> <!-- Not sure if needed -->
+    <script type="text/javascript" src="vendors/angular/angular.min.js"></script> <!-- Not sure if needed -->
+    <script type="text/javascript" src="vendors/angular-ui-calendar/src/calendar.js"></script>
+    <script type="text/javascript" src="vendors/fullcalendar/dist/fullcalendar.min.js"></script>
+    <script type="text/javascript" src="vendors/fullcalendar/dist/gcal.js"></script>
+    <!-- End ui-Cal things -->
     <title>Test Calendar</title>
   </head>
   <body ng-app="calendarApp">
