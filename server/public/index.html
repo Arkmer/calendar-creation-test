@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="vendors/angular/angular.js"></script>
+    <script src="vendors/angular-route/angular-route.js"></script>
+    <script src="scripts/client.js"></script>
+    <script src="controllers/SettingsController.js"></script>
+    <script src="controllers/YearController.js"></script>
+    <script src="controllers/MonthController.js"></script>
+    <script src="controllers/WeekController.js"></script>
+    <script src="controllers/DayController.js"></script>
+    <script src="services/TempService.js"></script>
+    <title>Test Calendar</title>
+  </head>
+  <body ng-app="calendarApp">
+    <nav>
+        <a href="/#!">Settings</a>
+        <a href="/#!year">Year View</a>
+        <a href="/#!month">Month View</a>
+        <a href="/#!week">Week View</a>
+        <a href="/#!day">Day View</a>
+    </nav>
+    <main ng-view>
+        <!-- The views populate here. -->
+    </main>
+  </body>
+</html>
